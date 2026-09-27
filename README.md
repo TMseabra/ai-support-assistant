@@ -1,6 +1,6 @@
 # AI Support Assistant
 
-An AI-powered customer support system, built as a portfolio project to demonstrate AI integration, APIs, backend and database work.
+An AI-powered customer support system, built to demonstrate AI integration, APIs, backend and database work.
 
 ## Stack
 
