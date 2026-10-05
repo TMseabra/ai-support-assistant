@@ -65,7 +65,6 @@ Create a GitHub OAuth App at [github.com/settings/developers](https://github.com
 - Authorization callback URL: `http://localhost:3000/api/auth/callback/github`
 
 
-
 ### 4. Configure environment variables
 
 ```bash
