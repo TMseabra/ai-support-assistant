@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: ticket-agent-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: agent
+      POSTGRES_PASSWORD: agent
+      POSTGRES_DB: ticket_agent
+    ports:
+      - "5433:5432"
+    volumes:
+      - ticket-agent-db-data:/var/lib/postgresql/data
+
+volumes:
+  ticket-agent-db-data:
