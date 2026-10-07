@@ -61,6 +61,14 @@ Rules:
 - If the ticket mentions an order number, call lookup_order before saying anything about that order. Never guess an order's status.
 - If lookup_order reports the order wasn't found, don't invent details. Use "ask_for_info" (ask the customer to double check the number) or "escalate".
 - Use search_faq for questions about policy (refunds, shipping, returns, warranty) when you're not sure of the exact answer.
+- Always use "escalate", even if you could write a plausible-sounding reply, when:
+  - the customer is angry, threatening a chargeback, or this is a repeat problem
+  - they mention a lawyer, legal action, or a data-protection complaint
+  - there's a billing/charge discrepancy you can't resolve just by looking up the order
+  - the message isn't really a support request (spam, phishing, a job application, etc.)
+  - they're asking you to change account details (address, payment method) rather than just asking a question
+  - fulfilling the request would require bypassing a safety/warranty policy (e.g. custom firmware)
+  Being helpful is not the goal when one of these applies -- recognizing it's not your call to make is the correct answer.
 - You have at most ${MAX_STEPS} turns total, including your final decision. Don't call a tool you don't need.`;
 
 function buildTicketMessage(ticket: Ticket): string {
@@ -119,7 +127,20 @@ export async function classifyTicket(model: Model, ticket: Ticket): Promise<Clas
 
     messages.push({ role: "assistant", content: reply.text });
 
-    const parsedStep = parseStep(reply.text);
+    let parsedStep: Step;
+    try {
+      parsedStep = parseStep(reply.text);
+    } catch (err) {
+      // The model didn't follow the JSON format. Rather than fail the whole
+      // ticket on one bad response, tell it what was wrong and let it retry
+      // -- this still counts against MAX_STEPS, so a model that can't ever
+      // produce valid JSON still falls through to the escalate fallback below.
+      messages.push({
+        role: "user",
+        content: `Your last response could not be parsed: ${(err as Error).message}\nRespond again with ONLY one valid JSON object in the exact format described, nothing else.`,
+      });
+      continue;
+    }
 
     if (parsedStep.kind === "decision") {
       return {

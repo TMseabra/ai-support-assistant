@@ -22,6 +22,13 @@ An AI-powered customer support system, built to demonstrate AI integration, APIs
 
 Later on, company documents/FAQ can be added so the AI answers based on them (RAG).
 
+## Ticket Triage Agent
+
+This repo also contains a separate, self-contained project: an autonomous agent
+that classifies support tickets, uses tools (order lookup, FAQ search) to decide
+what to do, and logs every decision with cost/latency. It has its own README,
+database, and evaluation script — see [`agent/README.md`](agent/README.md).
+
 ## What this project demonstrates
 
 AI integration + APIs + backend + database

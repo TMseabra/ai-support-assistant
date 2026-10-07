@@ -6,7 +6,8 @@
   "scripts": {
     "migrate": "tsx src/db/migrate.ts",
     "seed": "tsx src/db/seed.ts",
-    "agent": "tsx src/agent/run.ts"
+    "agent": "tsx src/agent/run.ts",
+    "eval": "tsx src/eval/run.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.132.0",
