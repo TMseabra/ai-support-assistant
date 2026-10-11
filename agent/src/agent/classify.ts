@@ -105,7 +105,7 @@ function parseStep(raw: string): Step {
     return { kind: "tool", tool: toolCall.tool, input: toolCall.input };
   }
 
-  const { type: _type, ...decision } = DecisionSchema.parse(parsed);
+  const decision = DecisionSchema.omit({ type: true }).parse(parsed);
   return { kind: "decision", decision };
 }
 
