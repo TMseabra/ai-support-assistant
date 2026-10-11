@@ -20,7 +20,7 @@ An AI-powered customer support system, built to demonstrate AI integration, APIs
 - Authentication (GitHub OAuth)
 - Conversation context (the AI remembers previous messages in the conversation)
 
-Later on, company documents/FAQ can be added so the AI answers based on them (RAG).
+Planned: company documents/FAQ so the AI answers based on them (RAG).
 
 ## Ticket Triage Agent
 
@@ -33,18 +33,22 @@ database, and evaluation script — see [`agent/README.md`](agent/README.md).
 
 AI integration + APIs + backend + database
 
-## Development roadmap
+## Project status
 
-1. Idea
-2. Planning
-3. Database / Architecture
-4. Development
-5. Git / Branches
-6. Testing
-7. Deployment
-8. README
-9. Screenshots
-10. Demo
+The core app and the triage agent are implemented and working locally.
+
+- [x] Idea
+- [x] Planning
+- [x] Database / architecture (Prisma + Neon, agent schema in `agent/db`)
+- [x] Development (chat app, auth, streaming, history, triage agent + eval harness)
+- [x] Git / branches
+- [ ] Testing (the agent has an evaluation script; the web app has no automated tests yet)
+- [ ] Deployment (runs locally only; Ollama needs a reachable host to deploy)
+- [x] README
+- [ ] Screenshots
+- [ ] Demo
+
+Not built yet: RAG over company documents/FAQ in the chat app.
 
 ## Running locally
 
