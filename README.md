@@ -96,3 +96,13 @@ npx prisma migrate dev
 ```bash
 npm run dev
 ```
+
+## Scripts
+
+| Command             | What it does                      |
+| ------------------- | --------------------------------- |
+| `npm run dev`       | Start the dev server              |
+| `npm run build`     | Production build                  |
+| `npm run start`     | Serve the production build        |
+| `npm run lint`      | Run ESLint                        |
+| `npm run typecheck` | Type-check with `tsc --noEmit`    |
