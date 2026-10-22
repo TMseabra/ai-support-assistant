@@ -106,3 +106,8 @@ npm run dev
 | `npm run start`     | Serve the production build        |
 | `npm run lint`      | Run ESLint                        |
 | `npm run typecheck` | Type-check with `tsc --noEmit`    |
+
+## Troubleshooting
+
+- **Login fails on a different port:** if port 3000 is taken, Next.js falls back to 3001 and the GitHub OAuth callback (`http://localhost:3000/api/auth/callback/github`) no longer matches. Free port 3000 and restart `npm run dev`.
+- **Chat returns an error:** make sure Ollama is running and the model is pulled (`ollama pull llama3.2`). `OLLAMA_BASE_URL` and `OLLAMA_MODEL` can override the defaults.
