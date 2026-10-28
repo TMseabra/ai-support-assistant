@@ -52,6 +52,7 @@ Not built yet: RAG over company documents/FAQ in the chat app.
 
 ## Running locally
 
+
 ### 1. Install dependencies
 
 ```bash
