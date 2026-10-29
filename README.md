@@ -50,7 +50,6 @@ The core app and the triage agent are implemented and working locally.
 
 Not built yet: RAG over company documents/FAQ in the chat app.
 
-
 ## Running locally
 
 
