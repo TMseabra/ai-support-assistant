@@ -140,3 +140,7 @@ agent/           Standalone ticket triage agent (own README)
 - Automated tests for the web app
 - Deploy with a hosted model instead of local Ollama
 - Screenshots and a short demo video
+
+## License
+
+MIT, see [LICENSE](LICENSE).
