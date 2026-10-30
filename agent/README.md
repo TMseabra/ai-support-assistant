@@ -161,3 +161,9 @@ larger model should be more consistent run-to-run.
   per the original project plan.
 - **Averaging multiple eval runs** — would reduce the noise described above; skipped
   here to keep API/compute cost down during development.
+
+## Type-checking
+
+```bash
+npm run typecheck
+```
