@@ -133,3 +133,10 @@ agent/           Standalone ticket triage agent (own README)
 | `NEXTAUTH_URL`                        | Base URL of the app                      |
 | `AUTH_GITHUB_ID` / `AUTH_GITHUB_SECRET` | GitHub OAuth App credentials           |
 | `OLLAMA_BASE_URL` / `OLLAMA_MODEL`    | Ollama server and model (optional)       |
+
+## Ideas for next steps
+
+- RAG over company documents / FAQ in the chat app
+- Automated tests for the web app
+- Deploy with a hosted model instead of local Ollama
+- Screenshots and a short demo video
