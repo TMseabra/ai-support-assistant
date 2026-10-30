@@ -112,3 +112,14 @@ npm run dev
 
 - **Login fails on a different port:** if port 3000 is taken, Next.js falls back to 3001 and the GitHub OAuth callback (`http://localhost:3000/api/auth/callback/github`) no longer matches. Free port 3000 and restart `npm run dev`.
 - **Chat returns an error:** make sure Ollama is running and the model is pulled (`ollama pull llama3.2`). `OLLAMA_BASE_URL` and `OLLAMA_MODEL` can override the defaults.
+
+## Project structure
+
+```
+src/app/         Next.js routes (chat UI, login, API routes)
+src/components/  ChatWindow and Sidebar
+src/lib/         Prisma client, Ollama client, server actions
+src/auth.ts      Auth.js (GitHub OAuth) configuration
+prisma/          Database schema and migrations
+agent/           Standalone ticket triage agent (own README)
+```
