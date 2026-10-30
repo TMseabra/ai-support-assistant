@@ -123,3 +123,13 @@ src/auth.ts      Auth.js (GitHub OAuth) configuration
 prisma/          Database schema and migrations
 agent/           Standalone ticket triage agent (own README)
 ```
+
+## Environment variables
+
+| Variable                              | Purpose                                  |
+| ------------------------------------- | ---------------------------------------- |
+| `DATABASE_URL`                        | Postgres connection string (Neon)        |
+| `AUTH_SECRET`                         | Secret used by Auth.js                   |
+| `NEXTAUTH_URL`                        | Base URL of the app                      |
+| `AUTH_GITHUB_ID` / `AUTH_GITHUB_SECRET` | GitHub OAuth App credentials           |
+| `OLLAMA_BASE_URL` / `OLLAMA_MODEL`    | Ollama server and model (optional)       |
