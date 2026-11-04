@@ -1,5 +1,8 @@
 # AI Support Assistant
 
+[![CI](https://github.com/TMseabra/ai-support-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/TMseabra/ai-support-assistant/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 An AI-powered customer support system, built to demonstrate AI integration, APIs, backend and database work.
 
 ## Stack
