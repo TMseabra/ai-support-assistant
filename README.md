@@ -145,3 +145,9 @@ agent/           Standalone ticket triage agent (own README)
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+## Why Ollama?
+
+The chat uses a local model through Ollama so the project runs for free and
+without any API key. The triage agent has a swappable model layer, so it can
+also run on Claude when a hosted model is preferred.
