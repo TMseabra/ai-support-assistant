@@ -37,6 +37,7 @@ AI integration + APIs + backend + database
 
 The core app and the triage agent are implemented and working locally.
 
+
 - [x] Idea
 - [x] Planning
 - [x] Database / architecture (Prisma + Neon, agent schema in `agent/db`)
