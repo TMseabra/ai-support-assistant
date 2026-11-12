@@ -154,3 +154,11 @@ MIT, see [LICENSE](LICENSE).
 The chat uses a local model through Ollama so the project runs for free and
 without any API key. The triage agent has a swappable model layer, so it can
 also run on Claude when a hosted model is preferred.
+
+## More documentation
+
+- [Architecture](docs/ARCHITECTURE.md)
+- [Roadmap](docs/ROADMAP.md)
+- [FAQ](docs/FAQ.md)
+- [Glossary](docs/GLOSSARY.md)
+- [Demo script](docs/DEMO_SCRIPT.md)
