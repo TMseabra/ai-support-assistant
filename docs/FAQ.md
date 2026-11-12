@@ -8,3 +8,6 @@
 
 **Why does login fail locally?** The GitHub OAuth callback must match the port
 the app runs on. See the Troubleshooting section of the README.
+
+**Can the triage agent use Claude instead of Ollama?** Yes. Set `MODEL_PROVIDER=claude`
+and `ANTHROPIC_API_KEY` in `agent/.env`.
