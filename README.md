@@ -162,3 +162,7 @@ also run on Claude when a hosted model is preferred.
 - [FAQ](docs/FAQ.md)
 - [Glossary](docs/GLOSSARY.md)
 - [Demo script](docs/DEMO_SCRIPT.md)
+- [Database](docs/DATABASE.md)
+- [Prompts](docs/PROMPTS.md)
+- [Testing](docs/TESTING.md)
+- [Deployment](docs/DEPLOYMENT.md)
