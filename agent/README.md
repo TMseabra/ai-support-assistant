@@ -167,3 +167,14 @@ larger model should be more consistent run-to-run.
 ```bash
 npm run typecheck
 ```
+
+## Environment variables
+
+| Variable            | Purpose                                                    |
+| ------------------- | ---------------------------------------------------------- |
+| `DATABASE_URL`      | Postgres connection (default points at the docker-compose DB) |
+| `MODEL_PROVIDER`    | `ollama` (default) or `claude`                             |
+| `OLLAMA_BASE_URL`   | Ollama server URL                                          |
+| `OLLAMA_MODEL`      | Ollama model (default in `.env.example`: `qwen2.5:7b`)     |
+| `ANTHROPIC_API_KEY` | Needed only when `MODEL_PROVIDER=claude`                   |
+| `ANTHROPIC_MODEL`   | Optional, defaults to Claude Haiku 4.5                     |
