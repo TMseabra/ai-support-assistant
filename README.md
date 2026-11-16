@@ -5,6 +5,10 @@
 
 An AI-powered customer support system, built to demonstrate AI integration, APIs, backend and database work.
 
+## Contents
+
+[Stack](#stack) · [Features](#features) · [Ticket Triage Agent](#ticket-triage-agent) · [Project status](#project-status) · [Running locally](#running-locally) · [Scripts](#scripts) · [Troubleshooting](#troubleshooting) · [Documentation](#more-documentation)
+
 ## Stack
 
 - Next.js (App Router)
