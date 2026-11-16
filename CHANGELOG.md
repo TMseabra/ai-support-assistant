@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Add API, local models, known issues, release and accessibility docs
 - Add docs folder (architecture, database, prompts, testing, deployment, FAQ)
 
 - Add CI workflow, issue/PR templates and Dependabot config
