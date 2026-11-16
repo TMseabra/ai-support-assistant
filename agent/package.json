@@ -2,6 +2,8 @@
   "name": "ticket-triage-agent",
   "version": "0.1.0",
   "private": true,
+  "description": "Autonomous support ticket triage agent with tools and an evaluation harness",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "migrate": "tsx src/db/migrate.ts",
