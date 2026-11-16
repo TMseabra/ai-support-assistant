@@ -170,3 +170,8 @@ also run on Claude when a hosted model is preferred.
 - [Prompts](docs/PROMPTS.md)
 - [Testing](docs/TESTING.md)
 - [Deployment](docs/DEPLOYMENT.md)
+- [API](docs/API.md)
+- [Local models](docs/LOCAL_MODELS.md)
+- [Known issues](docs/KNOWN_ISSUES.md)
+- [Release process](docs/RELEASE_PROCESS.md)
+- [Accessibility](docs/ACCESSIBILITY.md)
