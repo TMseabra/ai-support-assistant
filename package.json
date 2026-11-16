@@ -2,6 +2,8 @@
   "name": "ai-support-assistant",
   "version": "0.1.0",
   "private": true,
+  "description": "AI-powered customer support chat built with Next.js, Prisma and Ollama",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
